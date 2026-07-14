@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Custom LED Neon Signs made in London. Design your own, upload artwork, or browse 1000+ ideas. 3–4 day delivery. 350+ 5-star reviews." />
+  <title>NeuNeon — Custom LED Neon Signs, Love at First Light!</title>
+  <link rel="icon" href="/vite.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;600;700&family=Satisfy&family=Pacifico&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Neon-style fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Pacifico&family=Comfortaa:wght@700&family=Montserrat:wght@800&family=Sacramento&display=swap"
+    rel="stylesheet">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+     ANNOUNCEMENT BAR
+═══════════════════════════════════════════ -->
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <div class="announcement-items">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/447301288315?text=Hello%20Saba,%20I%20am%20interested%20in%20your%20neon%20signs."
+          target="_blank" rel="noopener noreferrer" class="ann-item"
+          style="display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.888 4.44-9.888 9.884 0 2.203.715 4.305 2.064 6.108l-.513 1.884 1.935-.506z" />
+          </svg>
+          Chat with us
+        </a>
+
+        <span class="ann-sep">·</span>
+
+        <!-- Gmail -->
+        <a href="mailto:Sabashoukat2149@gmail.com" class="ann-item"
+          style="display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Email Us
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" data-route="home">
+        <img src="public/images/logo.png" alt="neuNeon Logo" class="logo-img">
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link" data-route="home">Home</a></li>
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link nav-link-dropdown">Custom Neon Signs
+            <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#customize" class="dropdown-item" data-route="customize"><svg width="16" height="16" fill="none"
+                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 20h9" />
+                <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+              </svg>Design Your Own</a>
+            <a href="#customize" class="dropdown-item" data-route="customize" data-tab="upload"><svg width="16"
+                height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <polyline points="16 16 12 12 8 16" />
+                <line x1="12" y1="12" x2="12" y2="21" />
+                <path d="M20.39 18.39A5 5 0 0018 9h-1.26A8 8 0 103 16.3" />
+              </svg>Upload Your Design</a>
+            <a href="#browse" class="dropdown-item" data-route="browse"><svg width="16" height="16" fill="none"
+                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+              </svg>Browse Designs</a>
+          </div>
+        </li>
+        <li>
+          <a href="#shop" class="nav-link">Shop
+          </a>
+
+        </li>
+        <li><a href="#faq" class="nav-link" data-scroll="faq">FAQ</a></li>
+        <li><a href="#reviews" class="nav-link" data-scroll="reviews">Reviews</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="nav-icon-btn" id="searchToggle" aria-label="Search">
+          <svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </button>
+        <button class="nav-icon-btn" id="authToggle" aria-label="Account">
+          <svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <!-- <span class="nav-icon-label" id="authLabel">Sign in</span> -->
+        </button>
+
+        <button class="nav-icon-btn" id="cartToggle" aria-label="Cart">
+          <svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 01-8 0" />
+          </svg>
+          <span class="badge" id="cartCount" style="display:none">0</span>
+        </button>
+        <button class="nav-hamburger" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search bar -->
+    <div class="search-bar" id="searchBar">
+      <div class="search-bar-inner">
+        <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <input type="search" placeholder="Search neon signs, e.g. 'Open', 'Love', 'Wedding'..." id="searchInput"
+          autocomplete="off" />
+        <button class="search-close" id="searchClose" aria-label="Close">
+          <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <div class="search-suggestions" id="searchSuggestions"></div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+     APP
+═══════════════════════════════════════════ -->
+  <div id="app">
+
+    <!-- ───────────────────────────────────────────
+     HOME PAGE
+─────────────────────────────────────────── -->
+    <div class="page active" id="page-home" data-page="home">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="sparkles">
+          <span class="sparkle"></span>
+          <span class="sparkle"></span>
+          <span class="sparkle"></span>
+          <span class="sparkle"></span>
+          <span class="sparkle"></span>
+        </div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="container">
+
+          <div class="hero-center">
+            <h1 class="hero-title">Custom LED Neon Signs,<br /><em class="hero-em">Made in the UK!</em></h1>
+            <p class="hero-sub">Transform your space with handcrafted LED neon. From design to delivery in as little as
+              3–4 days.</p>
+          </div>
+
+          <!-- Feature Cards (inside hero) -->
+          <div class="hero-cards">
+            <div class="hero-card" role="button" tabindex="0" data-route="customize">
+              <div class="hero-card-img">
+                <img src="https://neu-neon.com/cdn/shop/files/customggg.png?v=1726147523&width=800"
+                  alt="Design your own custom neon sign on mobile" loading="eager" />
+              </div>
+              <div class="hero-card-body">
+                <h3>Design Your Own</h3>
+                <p>Use our builder to create something unique</p>
+              </div>
+            </div>
+            <div class="hero-card" role="button" tabindex="0" data-route="customize" data-tab="upload">
+              <div class="hero-card-img">
+                <img src="https://neu-neon.com/cdn/shop/files/usttaraf_1.png?v=1778857188&width=800"
+                  alt="Upload your logo to turn into a neon sign" loading="eager" />
+              </div>
+              <div class="hero-card-body">
+                <h3>Upload Your Design</h3>
+                <p>Fast quotes for logos, artwork &amp; sketches</p>
+              </div>
+            </div>
+            <div class="hero-card" role="button" tabindex="0" data-route="browse">
+              <div class="hero-card-img">
+                <img src="https://neu-neon.com/cdn/shop/files/image-08.png?v=1723477335&width=800"
+                  alt="Browse neon sign ideas and inspirations" loading="eager" />
+              </div>
+              <div class="hero-card-body">
+                <h3>Browse Ideas</h3>
+                <p>Explore designs &amp; get inspired</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TRUST BAR -->
+      <section class="trust-bar">
+        <div class="container">
+          <div class="trust-grid">
+            <div class="trust-item">
+              <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <div><strong>100%</strong><span>Quality Assurance</span></div>
+            </div>
+            <div class="trust-item">
+              <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <div><strong>250+ 5-Star Reviews</strong><span>Rated Excellent on Trustpilot</span></div>
+            </div>
+            <div class="trust-item">
+              <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              <div><strong>UK Made in London</strong><span>Handcrafted by our skilled team</span></div>
+            </div>
+            <div class="trust-item">
+              <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <rect x="1" y="4" width="22" height="16" rx="2" />
+                <line x1="1" y1="10" x2="23" y2="10" />
+              </svg>
+              <div><strong>Bank Transfer Available</strong><span>Pay direct to our account</span></div>
+            </div>
+            <div class="trust-item">
+              <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <div><strong>Free UK Delivery</strong><span>On orders over £99</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="section-dark" id="how-it-works">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-badge">Simple Process</span>
+            <h2>How It Works</h2>
+            <p>From idea to your door in four simple steps</p>
+          </div>
+          <div class="steps">
+            <div class="step-card">
+              <div class="step-num">01</div>
+              <div class="step-icon"><svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"
+                  viewBox="0 0 24 24">
+                  <path d="M12 20h9" />
+                  <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+                </svg></div>
+              <h3>Design or Upload</h3>
+              <p>Use our builder to craft your sign, or upload your own artwork, logo or sketch.</p>
+            </div>
+            <div class="step-arrow"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+            <div class="step-card">
+              <div class="step-num">02</div>
+              <div class="step-icon"><svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"
+                  viewBox="0 0 24 24">
+                  <path d="M9 11l3 3L22 4" />
+                  <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+                </svg></div>
+              <h3>We Send a Proof</h3>
+              <p>Our team reviews your design and sends a digital proof within 24 hours.</p>
+            </div>
+            <div class="step-arrow"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+            <div class="step-card">
+              <div class="step-num">03</div>
+              <div class="step-icon"><svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+                </svg></div>
+              <h3>We Craft Your Sign</h3>
+              <p>London artisans handcraft your LED neon sign with premium materials.</p>
+            </div>
+            <div class="step-arrow"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+            <div class="step-card">
+              <div class="step-num">04</div>
+              <div class="step-icon"><svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"
+                  viewBox="0 0 24 24">
+                  <rect x="1" y="3" width="15" height="13" />
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                  <circle cx="5.5" cy="18.5" r="2.5" />
+                  <circle cx="18.5" cy="18.5" r="2.5" />
+                </svg></div>
+              <h3>Fast Delivery</h3>
+              <p>Ships in 3–4 days, safely packaged and delivered to your door.</p>
+            </div>
+          </div>
+          <div style="text-align:center;margin-top:48px">
+            <a href="#customize" class="btn btn-pink btn-lg" data-route="customize">Start Designing Now</a>
+          </div>
+        </div>
+      </section>
+      <!-- Photo Gallery Showcase Section with your exact image filenames -->
+      <section id="gallery" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="section-badge">Our most-loved neon signs for every occasion
+
+            </span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-navy-950 tracking-tight mt-2">Top Selling Produts</h2>
+            <p class="text-slate-500 mt-3 text-sm md:text-base">Explore these real, premium custom neon signs designed
+              and developed by our workshop professionals using elite 5mm backings and long-lasting LED flex light.</p>
+          </div>
+
+          <!-- Project Cards Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Card 1: Coffee -->
+            <div
+              class="  border border-slate-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+              <div class="relative overflow-hidden h-96 bg-slate-900">
+                <!-- Direct representation of "d (1).jpeg" -->
+                <img src="/images/b.jpeg" alt="Coffee Neon Sign"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onerror="this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80'">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                  <p class="text-white text-xs font-medium">Coffee bar signature typography, warm golden tones with cool
+                    blue background outlining.</p>
+                </div>
+              </div>
+              <div class="p-4 border-t border-slate-50">
+                <span class="text-sky-500 font-extrabold text-[10px] uppercase tracking-wider">Business & Cafe
+                  Signage</span>
+                <h3 class="text-navy-950 font-bold text-base mt-1">"Coffee" Cafe Accent</h3>
+                <div class="flex items-center gap-1.5 mt-2 text-slate-500 text-xs">
+                  <i class="fa-solid fa-check text-green-500"></i>
+                  <span>White brick wall mount styling</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Let's Fly (Wings) -->
+            <div
+              class="  border border-slate-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+              <div class="relative overflow-hidden h-96 bg-slate-900">
+                <!-- Direct representation of "d (1).jpeg" -->
+                <img src="/images/f.jpeg" alt="Let's Fly Neon Wings Sign"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onerror="this.src='https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80'">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                  <p class="text-white text-xs font-medium">Sprawling custom wing setup featuring a dual-stage golden
+                    glow backing.</p>
+                </div>
+              </div>
+              <div class="p-4 border-t border-slate-50">
+                <span class="text-sky-500 font-extrabold text-[10px] uppercase tracking-wider">Event & Venue
+                  Signage</span>
+                <h3 class="text-navy-950 font-bold text-base mt-1">"Let's Fly" Wings Layout</h3>
+                <div class="flex items-center gap-1.5 mt-2 text-slate-500 text-xs">
+                  <i class="fa-solid fa-check text-green-500"></i>
+                  <span>Premium double layered contour base</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Hello Gorgeous -->
+            <div
+              class="  border border-slate-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+              <div class="relative overflow-hidden h-96 bg-slate-900">
+                <!-- Direct representation of "WhatsApp Image 2026-06-25 at 13.50.15 (1).jpeg" -->
+                <img src="/images/a.jpeg" alt="Hello Gorgeous Neon Sign"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onerror="this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80'">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                  <p class="text-white text-xs font-medium">Script design with a warm white main body matched by a
+                    gorgeous pink heart outline.</p>
+                </div>
+              </div>
+              <div class="p-4 border-t border-slate-50">
+                <span class="text-sky-500 font-extrabold text-[10px] uppercase tracking-wider">Beauty, Salon &
+                  Home</span>
+                <h3 class="text-navy-950 font-bold text-base mt-1">"Hello Gorgeous" Setup</h3>
+                <div class="flex items-center gap-1.5 mt-2 text-slate-500 text-xs">
+                  <i class="fa-solid fa-check text-green-500"></i>
+                  <span>Dual-tone pink and warm white elements</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Life is Sweet -->
+            <div
+              class="  border border-slate-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+              <div class="relative overflow-hidden h-96 bg-slate-900">
+                <!-- Direct representation of "WhatsApp Image 2026-06-25 at 13.50.14.jpeg" -->
+                <img src="/images/c.jpeg" alt="Life is Sweet Neon Sign"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onerror="this.src='https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&fit=crop&w=600&q=80'">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                  <p class="text-white text-xs font-medium">Warm script neon nested beautifully against dark backdrop
+                    leaves.</p>
+                </div>
+              </div>
+              <div class="p-4 border-t border-slate-50">
+                <span class="text-sky-500 font-extrabold text-[10px] uppercase tracking-wider">Interior & Greenery
+                  Walls</span>
+                <h3 class="text-navy-950 font-bold text-base mt-1">"Life is Sweet" Artpiece</h3>
+                <div class="flex items-center gap-1.5 mt-2 text-slate-500 text-xs">
+                  <i class="fa-solid fa-check text-green-500"></i>
+                  <span>Hanging suspension setup integrated</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- POPULAR DESIGNS -->
+      <section class="section-mid" id="shop">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-badge">Browse our top selling collection</span>
+            <h2>Popular Designs</h2>
+            <p>Our most-loved neon signs for every occasion</p>
+          </div>
+
+          <div class="gallery-grid" id="galleryPreviewGrid"></div>
+          <div style="text-align:center;margin-top:40px;"><button class="section-badge" 
+              type="button"><a href="#customize">Click to Customize your Own</a></button></div>
+
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section-dark" id="reviews">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-badge">Customer Reviews</span>
+            <h2>What Our Customers Say</h2>
+            <p>350+ verified 5-star reviews</p>
+          </div>
+          <div class="reviews-grid">
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p>"Absolutely stunning sign for our bar. The quality is incredible and it arrived in just 3 days. So many
+                compliments and our Instagram engagement went through the roof!"</p>
+              <div class="review-author">
+                <div class="review-avatar">SC</div>
+                <div><strong>Sarah C.</strong><span>The Crown &amp; Anchor, London</span></div>
+              </div>
+            </div>
+            <div class="review-card review-featured">
+              <div class="review-stars">★★★★★</div>
+              <p>"We ordered a custom 'Mr &amp; Mrs' sign for our wedding and it was the centrepiece of the whole
+                reception. The design team were so helpful and the final product exceeded all expectations."</p>
+              <div class="review-author">
+                <div class="review-avatar">EK</div>
+                <div><strong>Emma &amp; Kevin</strong><span>Wedding, Surrey</span></div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p>"Ordered a custom logo sign for our studio. Uploaded our vector, got a proof back the same day, and it
+                was on our wall within the week. Absolutely 10/10."</p>
+              <div class="review-author">
+                <div class="review-avatar">JM</div>
+                <div><strong>James M.</strong><span>Creative Director, Manchester</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="trustpilot-strip">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            Rated <strong>Excellent</strong> on Trustpilot &nbsp;·&nbsp; 4.9 / 5 from 350+ reviews
+          </div>
+        </div>
+      </section>
+      <!-- Why Choose Us Section -->
+      <section id="why-choose-us" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+            <!-- Left: Illustration / Text Block -->
+            <div class="lg:col-span-5 space-y-6">
+              <span class="section-badge">Craftsmanship Standards</span>
+              <h2 class="text-3xl md:text-4xl font-extrabold text-navy-950 tracking-tight">Why Choose Neon Signs
+                Experts?</h2>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Every sign is crafted with extreme precision, strict quality control procedures, and high-end materials.
+                Unlike standard generic neon builders, we prioritize long durability, high lumens, and pristine backing
+                clarity.
+              </p>
+              <div class="relative bg-navy-950 text-white rounded-2xl p-6 overflow-hidden border border-navy-800">
+                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-sky-500/20 rounded-full blur-2xl"></div>
+                <h4 class="font-bold text-base flex items-center gap-2 text-sky-400">
+                  <i class="fa-solid fa-award"></i> The 5mm Premium Backing Standard
+                </h4>
+                <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                  While competitors cut corners using cheap 3mm backing that bends and cracks over time, we use
+                  high-grade 5mm premium acrylic sheets to ensure long-term structural integrity and high aesthetics.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right: The features grid -->
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+              <!-- Feature 1 -->
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="text-navy-950 font-bold text-sm">Premium 5mm Acrylic Backing</h4>
+                  <p class="text-slate-500 text-xs mt-0.5">Heavy-duty, high structural integrity transparent sheets.</p>
+                </div>
+              </div>
+
+              <!-- Feature 2 -->
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="text-navy-950 font-bold text-sm">High-Quality LED Neon Flex</h4>
+                  <p class="text-slate-500 text-xs mt-0.5">Vibrant, consistent color distribution with zero dark spots.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="text-navy-950 font-bold text-sm">Bright, Long-Lasting Illumination</h4>
+                  <p class="text-slate-500 text-xs mt-0.5">Over 50,000+ hours of operational performance lifespan.</p>
+                </div>
+              </div>
+
+              <!-- Feature 4 -->
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="text-navy-950 font-bold text-sm">Energy Efficient & Eco-Friendly</h4>
+                  <p class="text-slate-500 text-xs mt-0.5">Operates on safe 12V low voltage generating zero buzz or
+                    heat.</p>
+                </div>
+              </div>
+
+              <!-- Feature 5 -->
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="text-navy-950 font-bold text-sm">Custom Sizes and Designs Available</h4>
+                  <p class="text-slate-500 text-xs mt-0.5">No restriction on complexity, lettering, colors, or sizing.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature 6 -->
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="text-navy-950 font-bold text-sm">Professional Craftsmanship</h4>
+                  <p class="text-slate-500 text-xs mt-0.5">Meticulous manual layout setup, glue application, and cuts.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature 7 -->
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="text-navy-950 font-bold text-sm">Durable and Lightweight Construction</h4>
+                  <p class="text-slate-500 text-xs mt-0.5">Shatter-resistant, lightweight profile designed for secure
+                    hanging.</p>
+                </div>
+              </div>
+
+              <!-- Feature 8 -->
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="text-navy-950 font-bold text-sm">Easy Installation</h4>
+                  <p class="text-slate-500 text-xs mt-0.5">Arrives with pre-drilled backing, mounting chains, and
+                    screws.</p>
+                </div>
+              </div>
+
+              <!-- Feature 9 -->
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="text-navy-950 font-bold text-sm">Competitive Pricing</h4>
+                  <p class="text-slate-500 text-xs mt-0.5">Premium quality components at direct workshop rates.</p>
+                </div>
+              </div>
+
+              <!-- Feature 10 -->
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="text-navy-950 font-bold text-sm">Nationwide & International Shipping</h4>
+                  <p class="text-slate-500 text-xs mt-0.5">Insured cushioning and tracking on global delivery lines.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- FAQ -->
+      <section class="section-mid" id="faq">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-badge">FAQ's</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about our custom LED neon signs</p>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item"><button class="faq-q" aria-expanded="false">How long does delivery take?<svg
+                  width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg></button>
+              <div class="faq-a">
+                <p>Most orders are delivered within 3–4 business days to UK mainland addresses. We offer express 24–48
+                  hour production for urgent orders. International shipping typically takes 5–10 business days.</p>
+              </div>
+            </div>
+            <div class="faq-item"><button class="faq-q" aria-expanded="false">What sizes are available?<svg width="18"
+                  height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg></button>
+              <div class="faq-a">
+                <p>We offer five standard sizes: Small (~30cm), Medium (~50cm), Large (~80cm), Extra Large (~100cm), and
+                  XXL (120cm+). Custom sizes are available — just get in touch.</p>
+              </div>
+            </div>
+            <div class="faq-item"><button class="faq-q" aria-expanded="false">Are LED neon signs energy efficient?<svg
+                  width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg></button>
+              <div class="faq-a">
+                <p>Yes! LED neon signs use up to 80% less energy than traditional glass neon. They run cool to the
+                  touch, are completely safe, and have an average lifespan of 50,000+ hours.</p>
+              </div>
+            </div>
+            <div class="faq-item"><button class="faq-q" aria-expanded="false">Can I upload my own logo or artwork?<svg
+                  width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg></button>
+              <div class="faq-a">
+                <p>Absolutely. We accept PNG, JPG, SVG, PDF, AI, and EPS files. Our design team will convert your
+                  artwork into a production-ready vector and send you a digital proof before manufacturing.</p>
+              </div>
+            </div>
+            <div class="faq-item"><button class="faq-q" aria-expanded="false">What is your returns policy?<svg
+                  width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg></button>
+              <div class="faq-a">
+                <p>Since every sign is custom-made, we cannot accept returns unless the item arrives damaged or differs
+                  from your approved proof. In those cases, we'll replace or fully refund your order.</p>
+              </div>
+            </div>
+            <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you offer a warranty?<svg width="18"
+                  height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg></button>
+              <div class="faq-a">
+                <p>Yes — all our LED neon signs come with a 24-month warranty covering manufacturing defects and
+                  component failure. Most signs last 10+ years with normal use.</p>
+              </div>
+            </div>
+          </div>
+          <div style="text-align:center;margin-top:32px;">
+            <p style="color:var(--text-2);margin-bottom:14px;font-size:.95rem;">Still have questions? Chat with us
+              directly — we usually reply within minutes.</p>
+            <a href="https://wa.me/923087441026?text=Hi%20NeuNeon%2C%20I%20have%20a%20question%20about%20ordering%20a%20custom%20neon%20sign.%20Can%20you%20help%3F"
+              target="_blank" rel="noopener noreferrer" class="wa-section-btn btn-lg">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.359.101 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.582 0 11.94-5.359 11.944-11.893a11.821 11.821 0 00-3.417-8.453" />
+              </svg>
+              Ask on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER -->
+     
+
+    </div><!-- /page-home -->
+
+
+    <!-- ───────────────────────────────────────────
+     CUSTOMIZER PAGE
+─────────────────────────────────────────── -->
+    <div class="page" id="page-customize" data-page="customize">
+      <div class="inner-hero">
+        <div class="container">
+          <h1>Design Your Neon Sign</h1>
+          <p>Create your perfect custom LED neon sign in minutes</p>
+        </div>
+      </div>
+      <div class="customizer-layout container">
+        <div class="customizer-tabs">
+          <button class="customizer-tab active" data-customizer-tab="text" id="tab-text">
+            <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M4 7V4h16v3" />
+              <line x1="9" y1="20" x2="15" y2="20" />
+              <line x1="12" y1="4" x2="12" y2="20" />
+            </svg>Text Design
+          </button>
+          <button class="customizer-tab" data-customizer-tab="upload" id="tab-upload">
+            <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <polyline points="16 16 12 12 8 16" />
+              <line x1="12" y1="12" x2="12" y2="21" />
+              <path d="M20.39 18.39A5 5 0 0018 9h-1.26A8 8 0 103 16.3" />
+            </svg>Upload Design
+          </button>
+        </div>
+        <div class="customizer-body">
+          <div class="customizer-controls">
+            <div class="customizer-panel active" id="panel-text">
+              <div class="ctrl-group">
+                <label class="ctrl-label" for="neonText">Your Text</label>
+                <input type="text" id="neonText" class="ctrl-input" placeholder="e.g. Open, Good Vibes, Bar..."
+                  maxlength="40" value="Good Vibes" />
+                <span class="ctrl-hint" id="textCharCount">10 / 40 characters</span>
+              </div>
+              <div class="ctrl-group">
+                <label class="ctrl-label">Font Style</label>
+                <div class="font-picker" id="fontPicker">
+                  <button class="font-option active" data-font="Dancing Script"
+                    style="font-family:'Dancing Script'">Script</button>
+                  <button class="font-option" data-font="Pacifico" style="font-family:'Pacifico'">Casual</button>
+                  <button class="font-option" data-font="Satisfy" style="font-family:'Satisfy'">Elegant</button>
+                  <button class="font-option" data-font="Poppins" style="font-family:'Poppins'">Modern</button>
+                  <button class="font-option" data-font="Georgia" style="font-family:'Georgia'">Serif</button>
+                  <button class="font-option" data-font="Arial" style="font-family:'Arial'">Bold</button>
+                </div>
+              </div>
+              <div class="ctrl-group">
+                <label class="ctrl-label">Neon Colour</label>
+                <div class="color-picker" id="colorPicker">
+                  <button class="color-swatch active" data-color="#FF006B" style="background:#FF006B"
+                    aria-label="Hot Pink" title="Hot Pink"></button>
+                  <button class="color-swatch" data-color="#00EEFF" style="background:#00EEFF" aria-label="Cyan"
+                    title="Cyan"></button>
+                  <button class="color-swatch" data-color="#FFE600" style="background:#FFE600" aria-label="Yellow"
+                    title="Yellow"></button>
+                  <button class="color-swatch" data-color="#00FF88" style="background:#00FF88" aria-label="Green"
+                    title="Green"></button>
+                  <button class="color-swatch" data-color="#FF6600" style="background:#FF6600" aria-label="Orange"
+                    title="Orange"></button>
+                  <button class="color-swatch" data-color="#FFFFFF" style="background:#FFFFFF" aria-label="White"
+                    title="White"></button>
+                  <button class="color-swatch" data-color="#BF5FFF" style="background:#BF5FFF" aria-label="Purple"
+                    title="Purple"></button>
+                  <button class="color-swatch" data-color="#FF3333" style="background:#FF3333" aria-label="Red"
+                    title="Red"></button>
+                  <label class="color-custom" title="Custom colour"><input type="color" id="customColor" value="#FF006B"
+                      aria-label="Custom colour" /><svg width="15" height="15" fill="none" stroke="currentColor"
+                      stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                      <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                      <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                      <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                      <path
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 011.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+                    </svg></label>
+                </div>
+              </div>
+              <div class="ctrl-group">
+                <label class="ctrl-label">Backing Board</label>
+                <div class="backing-picker" id="backingPicker">
+                  <button class="backing-option active" data-backing="clear"><span
+                      class="backing-preview backing-clear"></span>Clear Acrylic</button>
+                  <button class="backing-option" data-backing="black"><span
+                      class="backing-preview backing-black"></span>Black Acrylic</button>
+                  <button class="backing-option" data-backing="wood"><span
+                      class="backing-preview backing-wood"></span>Natural Wood</button>
+                </div>
+              </div>
+            </div>
+            <div class="customizer-panel" id="panel-upload">
+              <div class="upload-zone" id="uploadZone">
+                <input type="file" id="fileInput" accept="image/*,.pdf,.svg,.ai,.eps" hidden />
+                <div class="upload-zone-inner" id="uploadZoneInner">
+                  <svg width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                    <polyline points="16 16 12 12 8 16" />
+                    <line x1="12" y1="12" x2="12" y2="21" />
+                    <path d="M20.39 18.39A5 5 0 0018 9h-1.26A8 8 0 103 16.3" />
+                  </svg>
+                  <p><strong>Drop your file here</strong> or <button class="upload-browse-btn" type="button"
+                      id="uploadBrowse">browse</button></p>
+                  <span class="ctrl-hint">PNG, JPG, SVG, PDF, AI, EPS — max 20MB</span>
+                </div>
+                <div class="upload-preview" id="uploadPreview" style="display:none">
+                  <img id="uploadPreviewImg" alt="Upload preview" />
+                  <button class="upload-remove" id="uploadRemove" type="button" aria-label="Remove file"><svg width="15"
+                      height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <line x1="18" y1="6" x2="6" y2="18" />
+                      <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg></button>
+                </div>
+              </div>
+              <div class="ctrl-group">
+                <label class="ctrl-label" for="uploadNotes">Special Instructions</label>
+                <textarea id="uploadNotes" class="ctrl-textarea" rows="4"
+                  placeholder="Describe colour preferences, specific requirements, or notes for our design team..."></textarea>
+              </div>
+              <p class="ctrl-hint">Our team will send a quote and digital proof within 24 hours.</p>
+            </div>
+
+            <!-- Shared controls -->
+            <div class="ctrl-group">
+              <label class="ctrl-label">Size</label>
+              <div class="size-picker" id="sizePicker">
+                <button class="size-option" data-size="small"
+                  data-price="89"><strong>S</strong><span>~30cm</span></button>
+                <button class="size-option active" data-size="medium"
+                  data-price="139"><strong>M</strong><span>~50cm</span></button>
+                <button class="size-option" data-size="large"
+                  data-price="199"><strong>L</strong><span>~80cm</span></button>
+                <button class="size-option" data-size="xl"
+                  data-price="269"><strong>XL</strong><span>~100cm</span></button>
+              </div>
+            </div>
+            <div class="ctrl-group ctrl-row">
+              <div class="qty-control">
+                <label class="ctrl-label">Quantity</label>
+                <div class="qty-picker">
+                  <button class="qty-btn" id="qtyMinus" type="button">−</button>
+                  <span class="qty-value" id="qtyValue">1</span>
+                  <button class="qty-btn" id="qtyPlus" type="button">+</button>
+                </div>
+              </div>
+              <div>
+                <label class="ctrl-label">Total Price</label>
+                <div class="price-display"><span class="price-cur">£</span><span class="price-num"
+                    id="priceDisplay">139</span></div>
+              </div>
+            </div>
+            <button class="btn btn-pink btn-full btn-lg" id="addToCartBtn" type="button">
+              <svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+              Add to Cart
+            </button>
+            <div class="customizer-guarantees">
+              <span><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>24-month warranty</span>
+              <span><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>3–4 day delivery</span>
+              <span><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <polyline points="9 11 12 14 22 4" />
+                  <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+                </svg>Free proof</span>
+            </div>
+          </div>
+          <div class="customizer-preview">
+            <div class="preview-label">
+              <span>Live Preview</span>
+              <button class="preview-fullscreen" id="previewFullscreen" type="button">
+                <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3" />
+                </svg>
+              </button>
+            </div>
+            <div class="canvas-container" id="canvasContainer"><canvas id="customizerCanvas" width="600"
+                height="350"></canvas></div>
+            <div class="preview-environments">
+              <span class="preview-env-label">Preview in:</span>
+              <button class="preview-env active" data-env="studio" type="button">Studio</button>
+              <button class="preview-env" data-env="bedroom" type="button">Bedroom</button>
+              <button class="preview-env" data-env="bar" type="button">Bar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ───────────────────────────────────────────
+     BROWSE PAGE
+─────────────────────────────────────────── -->
+    <div class="page" id="page-browse" data-page="browse">
+      <div class="inner-hero">
+        <div class="container">
+          <h1>Browse Neon Signs</h1>
+          <p>200+ ready-to-buy and fully customisable designs</p>
+        </div>
+      </div>
+      <div class="browse-layout container">
+        <aside class="browse-sidebar">
+          <div class="sidebar-section">
+            <h3 class="sidebar-title">Categories</h3>
+            <ul class="sidebar-filter-list" id="categoryFilters">
+              <li><label><input type="checkbox" value="all" checked />All Signs</label></li>
+              <li><label><input type="checkbox" value="home" />Home Decor</label></li>
+              <li><label><input type="checkbox" value="business" />Business</label></li>
+              <li><label><input type="checkbox" value="bar" />Bar &amp; Cafe</label></li>
+              <li><label><input type="checkbox" value="sports" />Sports &amp; Gaming</label></li>
+              <li><label><input type="checkbox" value="quotes" />Quotes &amp; Phrases</label></li>
+            </ul>
+          </div>
+          <div class="sidebar-section">
+            <h3 class="sidebar-title">Colour</h3>
+            <ul class="sidebar-filter-list">
+              <li><label><input type="checkbox" value="pink" /><span class="filter-dot"
+                    style="background:#FF006B"></span>Hot Pink</label></li>
+              <li><label><input type="checkbox" value="blue" /><span class="filter-dot"
+                    style="background:#00EEFF"></span>Blue / Cyan</label></li>
+              <li><label><input type="checkbox" value="white" /><span class="filter-dot"
+                    style="background:#FFF;border:1px solid #333"></span>White</label></li>
+              <li><label><input type="checkbox" value="green" /><span class="filter-dot"
+                    style="background:#00FF88"></span>Green</label></li>
+              <li><label><input type="checkbox" value="orange" /><span class="filter-dot"
+                    style="background:#FF6600"></span>Orange</label></li>
+              <li><label><input type="checkbox" value="yellow" /><span class="filter-dot"
+                    style="background:#FFE600"></span>Yellow</label></li>
+            </ul>
+          </div>
+          <div class="sidebar-section">
+            <h3 class="sidebar-title">Price Range</h3>
+            <div class="price-range-slider">
+              <div class="price-range-labels"><span>£0</span><span>£<span id="priceMax">500</span></span></div>
+              <input type="range" class="range-slider" id="priceRangeMax" min="50" max="500" value="500" step="10" />
+            </div>
+          </div>
+        </aside>
+        <div class="browse-content">
+          <div class="browse-toolbar">
+            <span class="browse-count" id="browseCount">Showing 24 designs</span>
+            <div class="browse-sort"><label for="sortSelect">Sort by:</label><select id="sortSelect"
+                class="ctrl-select">
+                <option value="popular">Most Popular</option>
+                <option value="newest">Newest</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select></div>
+          </div>
+          <div class="product-grid" id="browseGrid"></div>
+          <div style="text-align:center;margin-top:40px"><button class="btn btn-outline" id="loadMoreBtn"
+              type="button"><a href="#customize">Click to Customize your Own</a></button></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /app -->
+
+
+  <!-- ═══════════════════════════════════════════
+     CART SIDEBAR
+═══════════════════════════════════════════ -->
+  <div class="overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar" role="dialog" aria-modal="true" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h2><svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <path d="M16 10a4 4 0 01-8 0" />
+        </svg>Your Cart</h2>
+      <button class="modal-close" id="cartClose" aria-label="Close cart"><svg width="21" height="21" fill="none"
+          stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg></button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <div class="cart-empty" id="cartEmpty">
+        <svg width="60" height="60" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <path d="M16 10a4 4 0 01-8 0" />
+        </svg>
+        <p>Your cart is empty</p>
+        <a href="#customize" class="btn btn-pink" data-route="customize" id="cartEmptyDesignBtn">Start Designing</a>
+      </div>
+      <ul class="cart-items" id="cartItems"></ul>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-subtotal"><span>Subtotal</span><span id="cartSubtotal">£0.00</span></div>
+      <p class="cart-shipping-note">Free UK delivery on orders over £99 · Shipping calculated at checkout</p>
+      <button class="btn btn-pink btn-full btn-lg" id="checkoutBtn" type="button">Proceed to Checkout →</button>
+      <button class="btn btn-ghost btn-full" id="continueShoppingBtn" type="button">Continue Shopping</button>
+    </div>
+  </aside>
+
+
+  <!-- ═══════════════════════════════════════════
+     CHECKOUT MODAL
+═══════════════════════════════════════════ -->
+  <div class="overlay" id="checkoutOverlay"></div>
+  <div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-label="Checkout"></div>
+
+
+  <!-- ═══════════════════════════════════════════
+     ORDER SUCCESS MODAL
+═══════════════════════════════════════════ -->
+  <div class="overlay" id="successOverlay"></div>
+  <div class="modal success-modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+    <div class="success-icon">
+      <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+        <polyline points="22 4 12 14.01 9 11.01" />
+      </svg>
+    </div>
+    <h2 id="successTitle">Order Confirmed!</h2>
+    <p>Thank you for your order. Your custom neon sign is now being crafted by our London team.</p>
+    <div class="success-details">
+      <div class="success-detail-row"><span>Order Reference</span><strong id="successOrderNum">—</strong></div>
+      <div class="success-detail-row"><span>Confirmation sent to</span><strong id="successEmail">your email</strong>
+      </div>
+      <div class="success-detail-row"><span>Order Total</span><strong id="successTotal">—</strong></div>
+      <div class="success-detail-row"><span>Expected Dispatch</span><strong>3–4 Business Days</strong></div>
+    </div>
+    <div class="success-next">
+      <p>Our design team will send your digital proof within 24 hours. Check your inbox!</p>
+    </div>
+    <div class="success-actions">
+      <button class="btn btn-pink btn-full" id="successShopBtn" type="button">Continue Shopping</button>
+      <button class="btn btn-ghost btn-full" id="successCloseBtn" type="button">Close</button>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+     AUTH MODAL
+═══════════════════════════════════════════ -->
+  <div class="overlay" id="authOverlay"></div>
+  <div class="modal" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
+    <div class="modal-header">
+      <h2 id="authModalTitle">Sign In</h2>
+      <button class="modal-close" id="authClose" aria-label="Close"><svg width="21" height="21" fill="none"
+          stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg></button>
+    </div>
+    <div class="modal-body">
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-auth-tab="signin">Sign In</button>
+        <button class="auth-tab" data-auth-tab="signup">Create Account</button>
+      </div>
+      <form class="auth-form active" id="signinForm" data-auth-panel="signin">
+        <div class="form-group"><label for="signinEmail">Email Address</label><input type="email" id="signinEmail"
+            placeholder="you@example.com" required autocomplete="email" /></div>
+        <div class="form-group"><label for="signinPassword">Password</label><input type="password" id="signinPassword"
+            placeholder="Your password" required autocomplete="current-password" /></div>
+        <div class="form-options"><label class="checkbox-label"><input type="checkbox" id="rememberMe" />Remember
+            me</label><button type="button" class="link-btn" id="forgotPassword">Forgot password?</button></div>
+        <button type="submit" class="btn btn-pink btn-full">Sign In</button>
+        <div class="auth-error" id="signinError" style="display:none"></div>
+      </form>
+      <form class="auth-form" id="signupForm" data-auth-panel="signup">
+        <div class="form-row">
+          <div class="form-group"><label for="signupFirstName">First Name</label><input type="text" id="signupFirstName"
+              placeholder="Jane" required autocomplete="given-name" /></div>
+          <div class="form-group"><label for="signupLastName">Last Name</label><input type="text" id="signupLastName"
+              placeholder="Smith" required autocomplete="family-name" /></div>
+        </div>
+        <div class="form-group"><label for="signupEmail">Email Address</label><input type="email" id="signupEmail"
+            placeholder="you@example.com" required autocomplete="email" /></div>
+        <div class="form-group"><label for="signupPassword">Password</label><input type="password" id="signupPassword"
+            placeholder="At least 8 characters" required minlength="8" autocomplete="new-password" /></div>
+        <div class="form-group"><label class="checkbox-label"><input type="checkbox" id="newsletterConsent"
+              checked />Send me exclusive deals &amp; new design drops</label></div>
+        <button type="submit" class="btn btn-pink btn-full">Create Account</button>
+        <div class="auth-error" id="signupError" style="display:none"></div>
+      </form>
+      <p class="auth-disclaimer">By continuing you agree to our <a href="#">Terms</a> and <a href="#">Privacy
+          Policy</a>.</p>
+    </div>
+  </div>
+
+
+  <!-- WhatsApp floating button (site-wide) -->
+  <a href="https://wa.me/923087441026?text=Hi%20NeuNeon%2C%20I%20have%20a%20question%20about%20a%20custom%20neon%20sign%20order.%20Can%20you%20help%3F"
+    class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <span class="wa-float-label">Chat with us!</span>
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.359.101 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.582 0 11.94-5.359 11.944-11.893a11.821 11.821 0 00-3.417-8.453" />
+    </svg>
+  </a>
+
+  <!-- Toast -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+
+  <!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <section class="newsletter">
+        <div class="container">
+          <div class="newsletter-inner">
+            <div class="newsletter-copy">
+              <h2>Be the First!</h2>
+              <p>Subscribe for exclusive deals, new design drops, and neon inspo.</p>
+            </div>
+            <form class="newsletter-form" id="newsletterForm" action="https://formspree.io/f/mjgnbpve" method="POST">
+              <div class="newsletter-row">
+                <!-- Ensure the input has a 'name' attribute so Formspree can identify it -->
+                <input type="email" name="email" placeholder="Enter your email address" id="newsletterEmail" required
+                  autocomplete="email" />
+                <button type="submit" class="btn btn-pink">Subscribe</button>
+              </div>
+              <p class="newsletter-note">Get all the Exclusive deals promptly.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+      <div class="footer-bottom">
+        <p class=" align-center">&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  © 2026 NeuNeon Ltd. All rights reserved. Registered in England &amp; Wales.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('.faq-q').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Toggle state
+        button.setAttribute('aria-expanded', !isExpanded);
+
+        // Optional: Close other open items (Accordion effect)
+        // Remove this block if you want multiple items open at once
+        document.querySelectorAll('.faq-q').forEach(otherBtn => {
+          if (otherBtn !== button) otherBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    });
+  </script>
+  <script type="module" src="/main.js"></script>
+  <script src="https://formspree.io/js/formbutton-v1.min.js"></script>
+  <script>
+
+    const form = document.getElementById("newsletterForm");
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      const data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          alert("Thanks for subscribing!");
+          form.reset();
+        } else {
+          alert("Oops! There was a problem submitting your form.");
+        }
+      });
+    }
+    form.addEventListener("submit", handleSubmit);
+  </script>
+</body>
+
+</html>
