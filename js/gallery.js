@@ -5,10 +5,10 @@ import { showToast } from './toast.js';
 const STRIPE_LINK = 'https://buy.stripe.com/test_3cI28qbCXerz9Gn1Kw8bS00';
 
 const PEXELS_NEON = [
-  { id: 1, name: 'Open Sign', category: 'business', color: '#FF006B', colors: ['#FF006B', '#FFFFFF'], price: 139, img: '/images/a.jpeg', badge: 'Best Seller', stripeLink: 'https://buy.stripe.com/14A00lc4z8gbezO7D69Ve03' },
-  { id: 2, name: 'Good Vibes', category: 'home', color: '#00EEFF', colors: ['#00EEFF', '#FF006B'], price: 139, img: '/images/b.jpeg', badge: 'Popular', stripeLink: 'https://buy.stripe.com/fZu3cxfgL2VRdvK3mQ9Ve02' },
-  { id: 3, name: 'Love Sign', category: 'wedding', color: '#FF006B', colors: ['#FF006B', '#FFFFFF', '#FF6600'], price: 139, img: '/images/c.jpeg', badge: '', stripeLink: 'https://buy.stripe.com/28EbJ39Wrbsn9fu0aE9Ve01' },
-  { id: 4, name: 'Mr & Mrs', category: 'wedding', color: '#FFFFFF', colors: ['#FFFFFF', '#FF006B'], price: 189, img: '/images/f.jpeg', badge: 'Wedding', stripeLink: 'https://buy.stripe.com/8x23cxgkPdAv4Ze4qU9Ve00' },
+  { id: 1, name: 'Open Sign', category: 'business', color: '#FF006B', colors: ['#FF006B', '#FFFFFF'], price: 26, img: '/images/a.jpeg', badge: 'Best Seller', stripeLink: 'https://buy.stripe.com/14A00lc4z8gbezO7D69Ve03' },
+  { id: 2, name: 'Good Vibes', category: 'home', color: '#00EEFF', colors: ['#00EEFF', '#FF006B'], price: 26, img: '/images/b.jpeg', badge: 'Popular', stripeLink: 'https://buy.stripe.com/fZu3cxfgL2VRdvK3mQ9Ve02' },
+  { id: 3, name: 'Love Sign', category: 'wedding', color: '#FF006B', colors: ['#FF006B', '#FFFFFF', '#FF6600'], price: 26, img: '/images/c.jpeg', badge: '', stripeLink: 'https://buy.stripe.com/28EbJ39Wrbsn9fu0aE9Ve01' },
+  { id: 4, name: 'Mr & Mrs', category: 'wedding', color: '#FFFFFF', colors: ['#FFFFFF', '#FF006B'], price: 26, img: '/images/f.jpeg', badge: 'Wedding', stripeLink: 'https://buy.stripe.com/8x23cxgkPdAv4Ze4qU9Ve00' },
   // { id: 5, name: 'Bar Open', category: 'bar', color: '#FFE600', colors: ['#FFE600', '#FF6600'], price: 159, img: '/images/e.jpeg', badge: '', stripeLink: STRIPE_LINK },
   // { id: 6, name: 'Cocktails', category: 'bar', color: '#00FF88', colors: ['#00FF88', '#00EEFF'], price: 189, img: '/images/f.jpeg', badge: '', stripeLink: STRIPE_LINK },
   // { id: 7, name: 'Dream Big', category: 'home', color: '#BF5FFF', colors: ['#BF5FFF', '#FF006B'], price: 139, img: 'https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop', badge: '', stripeLink: STRIPE_LINK },
