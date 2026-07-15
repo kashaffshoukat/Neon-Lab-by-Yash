@@ -32,50 +32,50 @@ export function closeCheckout() {
 }
 
 // ── Render ─────────────────────────────────────────────────────
-function renderCheckoutModal() {
-  const modal = document.getElementById('checkoutModal');
-  if (!modal) return;
+// function renderCheckoutModal() {
+//   const modal = document.getElementById('checkoutModal');
+//   if (!modal) return;
 
-  modal.innerHTML = `
-    <div class="co-header">
-   <a href="#home" class="nav-logo" data-route="home">
-        <img src="public/images/logo.png" alt="neuNeon Logo" class="logo-img">
-      </a>
-      <div class="co-steps">
-        <div class="co-step ${checkoutState.step >= 1 ? 'active' : ''} ${checkoutState.step > 1 ? 'done' : ''}">
-          <span class="co-step-num">1</span><span class="co-step-label">Contact</span>
-        </div>
-        <div class="co-step-line"></div>
-        <div class="co-step ${checkoutState.step >= 2 ? 'active' : ''} ${checkoutState.step > 2 ? 'done' : ''}">
-          <span class="co-step-num">2</span><span class="co-step-label">Delivery</span>
-        </div>
-        <div class="co-step-line"></div>
-        <div class="co-step ${checkoutState.step >= 3 ? 'active' : ''}">
-          <span class="co-step-num">3</span><span class="co-step-label">Payment</span>
-        </div>
-      </div>
-      <button class="co-close" id="coClose" aria-label="Close checkout">
-        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
-      </button>
-    </div>
+//   modal.innerHTML = `
+//     <div class="co-header">
+//    <a href="#home" class="nav-logo" data-route="home">
+//         <img src="public/images/logo.png" alt="neuNeon Logo" class="logo-img">
+//       </a>
+//       <div class="co-steps">
+//         <div class="co-step ${checkoutState.step >= 1 ? 'active' : ''} ${checkoutState.step > 1 ? 'done' : ''}">
+//           <span class="co-step-num">1</span><span class="co-step-label">Contact</span>
+//         </div>
+//         <div class="co-step-line"></div>
+//         <div class="co-step ${checkoutState.step >= 2 ? 'active' : ''} ${checkoutState.step > 2 ? 'done' : ''}">
+//           <span class="co-step-num">2</span><span class="co-step-label">Delivery</span>
+//         </div>
+//         <div class="co-step-line"></div>
+//         <div class="co-step ${checkoutState.step >= 3 ? 'active' : ''}">
+//           <span class="co-step-num">3</span><span class="co-step-label">Payment</span>
+//         </div>
+//       </div>
+//       <button class="co-close" id="coClose" aria-label="Close checkout">
+//         <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+//           <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+//         </svg>
+//       </button>
+//     </div>
 
-    <div class="co-body">
-      <div class="co-main">
-        ${checkoutState.step === 1 ? renderContactStep() : ''}
-        ${checkoutState.step === 2 ? renderAddressStep() : ''}
-        ${checkoutState.step === 3 ? renderPaymentStep() : ''}
-      </div>
-      <aside class="co-sidebar">
-        ${renderOrderSummary()}
-      </aside>
-    </div>
-  `;
+//     <div class="co-body">
+//       <div class="co-main">
+//         ${checkoutState.step === 1 ? renderContactStep() : ''}
+//         ${checkoutState.step === 2 ? renderAddressStep() : ''}
+//         ${checkoutState.step === 3 ? renderPaymentStep() : ''}
+//       </div>
+//       <aside class="co-sidebar">
+//         ${renderOrderSummary()}
+//       </aside>
+//     </div>
+//   `;
 
-  document.getElementById('coClose')?.addEventListener('click', closeCheckout);
-  bindStepHandlers();
-}
+//   document.getElementById('coClose')?.addEventListener('click', closeCheckout);
+//   bindStepHandlers();
+// }
 
 function renderContactStep() {
   const c = checkoutState.contact;
