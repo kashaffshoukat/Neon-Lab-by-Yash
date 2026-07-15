@@ -38,9 +38,10 @@ function renderCheckoutModal() {
 
   modal.innerHTML = `
     <div class="co-header">
-<a href="#home" class="nav-logo" data-route="home">
+   <a href="#home" class="nav-logo" data-route="home">
         <img src="public/images/logo.png" alt="neuNeon Logo" class="logo-img">
-      </a>      <div class="co-steps">
+      </a>
+      <div class="co-steps">
         <div class="co-step ${checkoutState.step >= 1 ? 'active' : ''} ${checkoutState.step > 1 ? 'done' : ''}">
           <span class="co-step-num">1</span><span class="co-step-label">Contact</span>
         </div>
