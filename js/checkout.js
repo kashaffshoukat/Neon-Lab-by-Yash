@@ -31,7 +31,6 @@ export function closeCheckout() {
   document.body.style.overflow = '';
 }
 
-── Render ─────────────────────────────────────────────────────
 function renderCheckoutModal() {
   const modal = document.getElementById('checkoutModal');
   if (!modal) return;
