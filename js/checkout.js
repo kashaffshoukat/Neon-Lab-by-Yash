@@ -3,10 +3,10 @@ import { showToast } from './toast.js';
 import { fetchOrder } from './supabase.js';
 
 // Formspree endpoint — owner receives order notification email
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xnnvkqra';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mjgnbpve';
 const STRIPE_PAYMENT_LINK = 'https://buy.stripe.com/test_3cI28qbCXerz9Gn1Kw8bS00';
 const OWNER_EMAIL = 'Sabashoukat2149@gmail.com';
-const WHATSAPP_NUMBER = '923087441026';
+const WHATSAPP_NUMBER = '+447301288315';
 
 let checkoutState = {
   step: 1,
@@ -38,8 +38,9 @@ function renderCheckoutModal() {
 
   modal.innerHTML = `
     <div class="co-header">
-      <div class="co-logo">neu<span class="logo-n">N</span>eon</div>
-      <div class="co-steps">
+<a href="#home" class="nav-logo" data-route="home">
+        <img src="public/images/logo.png" alt="neuNeon Logo" class="logo-img">
+      </a>      <div class="co-steps">
         <div class="co-step ${checkoutState.step >= 1 ? 'active' : ''} ${checkoutState.step > 1 ? 'done' : ''}">
           <span class="co-step-num">1</span><span class="co-step-label">Contact</span>
         </div>
@@ -387,6 +388,18 @@ async function handlePlaceOrder() {
 
   // Redirect directly to Stripe
   window.location.href = STRIPE_PAYMENT_LINK;
+}// In js/checkout.js
+async function handlePlaceOrder() {
+  const totalInPence = Math.round(getCartTotal() * 100); 
+  
+  const response = await fetch('http://localhost:5000/create-checkout-session', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ amount: totalInPence })
+  });
+  
+  const { url } = await response.json();
+  window.location.href = url; // Redirects to Stripe
 }
 
 function showOrderSuccess(orderNum, total, contact) {
